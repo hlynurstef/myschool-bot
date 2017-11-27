@@ -97,7 +97,6 @@ def login(url):
 def register(post_url, auth):
     """ Registers the user to Viso """
     while True:
-    	print("yeah buddy")
         # Send a POST request
         response = r.post(post_url, data={'pls': 'register'}, auth=auth)
         # Parse the resulting html page
